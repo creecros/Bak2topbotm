@@ -2,13 +2,13 @@
 $(window).scroll(function() {
     var height = $(window).scrollTop();
     if (height > 100) {
-        $('#back2Top').fadeIn();
+        $('#scrollBtn').fadeIn();
     } else {
-        $('#back2Top').fadeOut();
+        $('#scrollBtn').fadeOut();
     }
 });
 $(document).ready(function() {
-    $("#back2Top").click(function(event) {
+    $("#scrollBtn").click(function(event) {
         event.preventDefault();
         $("html, body").animate({ scrollTop: 0 }, "slow");
         return false;
