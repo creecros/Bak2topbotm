@@ -1,1 +1,1 @@
-<button id="scrollBtn" title="Go to top">Top</button>
+<button id="topBtn" title="Go to top">Top</button>
