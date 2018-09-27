@@ -19,7 +19,7 @@ class Plugin extends Base
     }
     public function getPluginDescription()
     {
-        return t('Back to Top Button');
+        return t('Back to Top & Bottom Buttons for Task Summary');
     }
     public function getPluginAuthor()
     {
