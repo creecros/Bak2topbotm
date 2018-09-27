@@ -20,8 +20,10 @@ $(document).ready(function() {
 /*Scroll to bottom when arrow up clicked BEGIN*/
 $(window).scroll(function() {
     var height = $(window).scrollTop();
-    if (height > 99) {
+    if (height > 100) {
         $('#scrollBtn2').fadeOut();
+    } else {
+        $('#scrollBtn2').show();
     }
 });
 $(document).ready(function() {
