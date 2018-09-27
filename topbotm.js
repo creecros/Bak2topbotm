@@ -16,3 +16,22 @@ $(document).ready(function() {
 
 });
  /*Scroll to top when arrow up clicked END*/
+
+/*Scroll to bottom when arrow up clicked BEGIN*/
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height < 100) {
+        $('#scrollBtn2').fadeIn();
+    } else {
+        $('#scrollBtn2').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#scrollBtn2").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: $("section.b_section") }, "slow");
+        return false;
+    });
+
+});
+ /*Scroll to bottom when arrow up clicked END*/
