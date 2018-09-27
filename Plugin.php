@@ -1,6 +1,6 @@
 <?php
 
-namespace Kanboard\Plugin\bak2topbotm;
+namespace Kanboard\Plugin\Bak2topbotm;
 use Kanboard\Core\Plugin\Base;
 
 class Plugin extends Base
