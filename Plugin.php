@@ -9,12 +9,13 @@ class Plugin extends Base
     {
         $this->hook->on('template:layout:css', array('template' => 'plugins/Bak2topbotm/topbotm.css'));
         $this->hook->on('template:layout:js', array('template' => 'plugins/Bak2topbotm/topbotm.js'));
-        $this->template->hook->attach('template:task:details:top', 'bak2topbotm:task/topbotm');
+        $this->template->hook->attach('template:task:details:top', 'bak2topbotm:task/gobot');
+        $this->template->hook->attach('template:task:details:bottom', 'bak2topbotm:task/gotop');
         $this->template->hook->attach('template:task:show:bottom', 'bak2topbotm:task/b_section');
     }
     public function getPluginName()
     {
-        return 'bak2topbotm';
+        return 'Bak2topbotm';
     }
     public function getPluginDescription()
     {
@@ -30,7 +31,7 @@ class Plugin extends Base
     }
     public function getPluginHomepage()
     {
-        return 'https://github.com/creecros/bak2topbotm';
+        return 'https://github.com/creecros/Bak2topbotm';
     }
     public function getCompatibleVersion()
     {

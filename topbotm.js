@@ -2,13 +2,13 @@
 $(window).scroll(function() {
     var height = $(window).scrollTop();
     if (height > 100) {
-        $('#scrollBtn').fadeIn();
+        $('#topBtn').fadeIn();
     } else {
-        $('#scrollBtn').fadeOut();
+        $('#topBtn').fadeOut();
     }
 });
 $(document).ready(function() {
-    $("#scrollBtn").click(function(event) {
+    $("#topBtn").click(function(event) {
         event.preventDefault();
         $("html, body").animate({ scrollTop: 0 }, "slow");
         return false;
@@ -18,16 +18,17 @@ $(document).ready(function() {
  /*Scroll to top when arrow up clicked END*/
 
 /*Scroll to bottom when arrow up clicked BEGIN*/
+
 $(window).scroll(function() {
     var height = $(window).scrollTop();
     if (height > 100) {
-        $('#scrollBtn2').fadeOut();
+        $('#bottomBtn').fadeOut();
     } else {
-        $('#scrollBtn2').show();
+        $('#bottomBtn').show();
     }
 });
 $(document).ready(function() {
-    $("#scrollBtn2").click(function(event) {
+    $("#bottomBtn").click(function(event) {
         event.preventDefault();
         $("html, body").animate({ scrollTop: $("section.b_section").offset().top }, "slow");
         return false;
