@@ -7,8 +7,8 @@ class Plugin extends Base
 {
     public function initialize()
     {
-        $this->hook->on('template:layout:css', array('template' => 'plugins/bak2topbotm/topbotm.css'));
-        $this->hook->on('template:layout:js', array('template' => 'plugins/bak2topbotm/topbotm.js'));
+        $this->hook->on('template:layout:css', array('template' => 'plugins/Bak2topbotm/topbotm.css'));
+        $this->hook->on('template:layout:js', array('template' => 'plugins/Bak2topbotm/topbotm.js'));
         $this->template->hook->attach('template:task:details:top', 'bak2topbotm:task/topbotm');
     }
     public function getPluginName()
