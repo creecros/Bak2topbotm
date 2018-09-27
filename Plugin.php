@@ -10,6 +10,7 @@ class Plugin extends Base
         $this->hook->on('template:layout:css', array('template' => 'plugins/Bak2topbotm/topbotm.css'));
         $this->hook->on('template:layout:js', array('template' => 'plugins/Bak2topbotm/topbotm.js'));
         $this->template->hook->attach('template:task:details:top', 'bak2topbotm:task/topbotm');
+        $this->template->hook->attach('template:task:show:bottom', 'bak2topbotm:task/b_section');
     }
     public function getPluginName()
     {
