@@ -9,17 +9,22 @@
     background-color: red; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
+    padding: 10px 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
     font-size: 18px; /* Increase font size */
+    transition: ease all 0.5s; /* Add smoothing when hover */
 }
 
 #topBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
 }
 
+#topBtn:hover span {
+    display: inline-block; /* Show on hover only */
+}
+
 #bottomBtn {
-    display: block; /* Hidden by default */
+    display: block; /* Shown by default  - change to 'none' to hide */
     position: fixed; /* Fixed/sticky position */
     top: 99px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
@@ -29,11 +34,24 @@
     background-color: red; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
+    padding: 10px 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
     font-size: 18px; /* Increase font size */
+    transition: ease all 0.5s; /* Add smoothing when hover */
 }
 
 #bottomBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
+}
+
+#bottomBtn:hover span {
+    display: inline-block; /* Show on hover only */
+}
+
+.scrollbottomhover {
+    display: none; /* Hide until hover */
+}
+
+.scrolltophover {
+    display: none; /* Hide until hover */
 }
